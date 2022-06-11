@@ -2,8 +2,9 @@
 This is a guide for building and running [instant-ngp](https://github.com/NVlabs/instant-ngp) with custom datasets.
 Code based on [instant-ngp-helper](https://github.com/comalnik/instant-ngp-helper) with updated directions, protocol, and dependencies.
 
+<br>
 
-## Steps
+## Instructions
 Follow these steps in order -- it matters.
 
 
@@ -32,6 +33,7 @@ pip install opencv-python
 ```
 12. Add `COLMAP` folder to PATH: `C:\Users\[YOUR USERNAME]\...\instant-ngp-simple\COLMAP`
 
+<br>
 
 ### How to Use
 instant-ngp-helper can process both video and image still sequences into NeRFs. 
@@ -55,6 +57,17 @@ python run.py
 19. Click the `instant-ngp (videos)` button in the UI, navigate back to the Anaconda Prompt window and follow the ffmpeg and COLMAP instructions. (Don't forget to add the COLMAP folder to PATH as shown in Step 12 or you'll get a COLMAP error.)
 20. When COLMAP finishes processing and says `done`, go back to the UI and click `instant-ngp NeRF`.
 
+<br>
 
 ## Video Tutorial
 Follow along with my guided video tutorial. (Coming soon)
+
+<br>
+
+## Loading Sample Datasets
+1. Copy all files from inside any of the sample folders into `...\instant-ngp-simple\instant-ngp\tmp`
+2. Open an `Anaconda Prompt` and `cd` into `...\instant-ngp-simple\` and run:
+```
+python run.py
+```
+3. In the UI that opens, click `instant-ngp (photos)`, which will load the dataset, open the testbed.exe, and being training the NeRF.
